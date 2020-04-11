@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Cadastro de cliente";
+}
+
+<h2>Cadastro de Cliente</h2>
+<form method="post" action="InserePessoa">
+    <div>
+    <label >Nome </label>
+    <input type="text" placeholder="Ex:Lucas" />
+    </div><br>
+
+    <div>
+    <label>Telefone</label>
+    <input type="tel" placeholder="Ex:(51)99988-7766" />
+    </div><br>
+
+    <div>
+    <label>Placa do veículo</label>
+    <input type="text" placeholder="Ex:iac2845"/>
+    </div><br>
+    <div>
+        <input type="submit" name="botaoSalvar" value="Salvar" />
+        <input type="reset" name="botaoCancelar" value="Cancelar" />
+    </div>
+</form>
+
+

@@ -13,5 +13,9 @@ namespace AppWeb.Controllers
         {
             return View();
         }
+        public ActionResult CadastroPessoa()
+        {
+            return View();
+        }
     }
 }
