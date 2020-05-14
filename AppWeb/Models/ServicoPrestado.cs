@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace projetoTelas
+namespace AppWeb
 {[Table("ServicosPrestados")]
     public class ServicoPrestado
     {
