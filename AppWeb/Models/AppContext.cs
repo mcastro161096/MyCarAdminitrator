@@ -9,7 +9,7 @@ namespace AppWeb
 {
    public class AppContext : DbContext
     {
-        public AppContext() : base("name=DbApp")
+        public AppContext() : base("name=DbAppweb")
         {
             Database.SetInitializer<AppContext>(new CreateDatabaseIfNotExists<AppContext>());
         }

@@ -1,19 +1,26 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AppWeb
 {
-    [Table("Pessoas")]
+    [Table("Pessoa")]
     public class Pessoa
     {
         [Key]
         public int IdPessoa { get; set; }
-        [MaxLength(150)]
+        [Required]
+        [MaxLength(100)]
         public string Nome { get; set; }
-        [MaxLength(15)]
-        public string Telefone { get; set; }
+        [Required]
+        [MaxLength(100)]
+        public string Sobrenome { get; set; }
         [MaxLength(8)]
-        public string PlacaVeiculo { get; set; }
+        public string Tipo { get; set; }
+      
+       
+       
+
 
 
     }
