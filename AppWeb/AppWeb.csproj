@@ -133,6 +133,7 @@
     <Compile Include="Models\PessoaDocumentos.cs" />
     <Compile Include="Models\PessoaEndereco.cs" />
     <Compile Include="Models\ServicoPrestado.cs" />
+    <Compile Include="Models\Veiculo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
