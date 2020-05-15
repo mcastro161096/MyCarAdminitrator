@@ -9,6 +9,8 @@ namespace AppWeb.Models
 {
     public class PessoaDocumentos
     {
+        [Key]
+        public int IdDocumento { get; set; }
         [ForeignKey("Pessoa")]
         public int PessoaId { get; set; }
         public virtual Pessoa Pessoa { get; set; }
@@ -22,6 +24,8 @@ namespace AppWeb.Models
         public string Sexo { get; set; }
         [MaxLength(10)]
         public string EstadoCivil { get; set; }
+        public DateTime Dataatualizacao { get; set; }
+
 
     }
 }

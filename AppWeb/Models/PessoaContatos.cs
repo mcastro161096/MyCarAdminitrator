@@ -18,5 +18,7 @@ namespace AppWeb.Models
         public string TipoContato { get; set; }
         [MaxLength(100)]
         public string Contato { get; set; }
+        public DateTime Dataatualizacao { get; set; }
+
     }
 }

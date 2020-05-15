@@ -17,7 +17,9 @@ namespace AppWeb
         public string Sobrenome { get; set; }
         [MaxLength(8)]
         public string Tipo { get; set; }
-      
+        public bool Ativo { get; set; }
+        public DateTime Dataatualizacao { get; set; }
+
        
        
 

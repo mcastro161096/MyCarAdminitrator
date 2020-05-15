@@ -9,6 +9,8 @@ namespace AppWeb.Models
 {
     public class PessoaEndereco
     {
+        [Key]
+        public int IdEndereco { get; set; }
         [ForeignKey("Pessoa")]
         public int PessoaId { get; set; }
         public virtual Pessoa Pessoa { get; set; }
@@ -24,5 +26,7 @@ namespace AppWeb.Models
         public string Cep { get; set; }
         [MaxLength(40)]
         public string Complemento { get; set; }
+        public DateTime Dataatualizacao { get; set; }
+
     }
 }
