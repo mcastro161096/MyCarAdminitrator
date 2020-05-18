@@ -16,6 +16,7 @@ namespace AppWeb.Models
         public int PessoaId { get; set; }
         public virtual Pessoa Pessoa { get; set; }
 
+
         public string Empresa { get; set; }
 
         public string Filial { get; set; }
