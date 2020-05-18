@@ -2,9 +2,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace AppWeb
+namespace MyCarAdministrator
 {
-    [Table("Pessoa")]
+    [Table("Pessoas")]
     public class Pessoa
     {
         [Key]

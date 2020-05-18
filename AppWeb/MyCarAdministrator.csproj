@@ -12,8 +12,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AppWeb</RootNamespace>
-    <AssemblyName>AppWeb</AssemblyName>
+    <RootNamespace>MyCarAdministrator</RootNamespace>
+    <AssemblyName>MyCarAdministrator</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -126,8 +126,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AppContext.cs" />
-    <Compile Include="Models\MetodosPessoa.cs" />
-    <Compile Include="Models\MetodosServico.cs" />
     <Compile Include="Models\Pessoa.cs" />
     <Compile Include="Models\PessoaContatos.cs" />
     <Compile Include="Models\PessoaDocumentos.cs" />
