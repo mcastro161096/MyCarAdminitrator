@@ -7,24 +7,25 @@ using System.Web;
 
 namespace AppWeb.Models
 {
-    public class PessoaContatos
+    public class PessoaPapel
     {
         [Key]
-        public int IdContato { get; set; }
+        public int IdPapel { get; set; }
 
         [ForeignKey("Pessoa")]
         public int PessoaId { get; set; }
-
         public virtual Pessoa Pessoa { get; set; }
 
-        [Display(Name = "Tipo de Contato")]
-        [MaxLength(8)]
-        public string TipoContato { get; set; }
+        public string Empresa { get; set; }
 
-        [MaxLength(100)]
-        public string Contato { get; set; }
+        public string Filial { get; set; }
+
+        public string Papel { get; set; }
+
+        public string Login { get; set; }
+
+        public string Senha { get; set; }
 
         public DateTime Dataatualizacao { get; set; }
-
     }
 }
