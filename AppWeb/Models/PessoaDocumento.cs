@@ -7,7 +7,8 @@ using System.Web;
 
 namespace MyCarAdministrator.Models
 {
-    public class PessoaDocumentos
+    [Table("PessoaDocumentos")]
+    public class PessoaDocumento
     {
         [Key]
         public int IdDocumento { get; set; }

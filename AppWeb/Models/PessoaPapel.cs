@@ -7,6 +7,7 @@ using System.Web;
 
 namespace MyCarAdministrator.Models
 {
+    [Table("PessoaPapel")]
     public class PessoaPapel
     {
         [Key]

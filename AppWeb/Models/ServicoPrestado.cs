@@ -14,6 +14,10 @@ namespace MyCarAdministrator
 
         public virtual Pessoa Pessoa { get; set; }
 
+        [MaxLength(50)]
+        [Display(Name = "Informe o serviço:")]
+        public string ServicoInformado { get; set; }
+
         [MaxLength(2000)]
         [Display(Name = "Descrição adicional do serviço")]
         public string DescricaoServico { get; set; }

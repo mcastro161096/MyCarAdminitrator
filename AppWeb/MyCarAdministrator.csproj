@@ -127,8 +127,8 @@
     </Compile>
     <Compile Include="Models\AppContext.cs" />
     <Compile Include="Models\Pessoa.cs" />
-    <Compile Include="Models\PessoaContatos.cs" />
-    <Compile Include="Models\PessoaDocumentos.cs" />
+    <Compile Include="Models\PessoaContato.cs" />
+    <Compile Include="Models\PessoaDocumento.cs" />
     <Compile Include="Models\PessoaEndereco.cs" />
     <Compile Include="Models\PessoaPapel.cs" />
     <Compile Include="Models\ServicoPrestado.cs" />
