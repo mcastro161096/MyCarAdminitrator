@@ -28,6 +28,9 @@ namespace MyCarAdministrator
 
         public DbSet<Veiculo> Veiculos { get; set; }
 
+        public DbSet<TipoDeServico> TiposDeServicos { get; set; }
+
+
 
 
     }

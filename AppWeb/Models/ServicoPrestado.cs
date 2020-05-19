@@ -20,7 +20,7 @@ namespace MyCarAdministrator
 
         [MaxLength(2000)]
         [Display(Name = "Descrição adicional do serviço")]
-        public string DescricaoServico { get; set; }
+        public string DescricaoAdicionalServico { get; set; }
 
         [Display(Name = "Valor Total")]
         [Range(-999999999999999999.99, 999999999999999999.99)]

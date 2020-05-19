@@ -132,6 +132,7 @@
     <Compile Include="Models\PessoaEndereco.cs" />
     <Compile Include="Models\PessoaPapel.cs" />
     <Compile Include="Models\ServicoPrestado.cs" />
+    <Compile Include="Models\TipoDeServico.cs" />
     <Compile Include="Models\Veiculo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
