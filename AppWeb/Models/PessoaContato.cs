@@ -20,7 +20,7 @@ namespace MyCarAdministrator.Models
 
         [Display(Name = "Tipo de Contato")]
         [MaxLength(8)]
-        public string TipoContato { get; set; }
+        public TipoDeContato TipoContato { get; set; }
 
         [MaxLength(100)]
         public string Contato { get; set; }

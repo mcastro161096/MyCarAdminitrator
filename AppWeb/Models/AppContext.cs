@@ -16,14 +16,6 @@ namespace MyCarAdministrator
         }
         public  DbSet<Pessoa> Pessoas { get; set; }
 
-        public DbSet<PessoaContato> PessoaContatos { get; set; }
-
-        public DbSet<PessoaDocumento> PessoaDocumentos { get; set; }
-
-        public DbSet<PessoaEndereco> PessoaEndereco { get; set; }
-
-        public DbSet<PessoaPapel> PessoaPapel { get; set; }
-
         public DbSet<ServicoPrestado> ServicosPrestados { get; set; }
 
         public DbSet<Veiculo> Veiculos { get; set; }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - MyCarAdministrator</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/estilo.css" rel="stylesheet" type="text/css" />
@@ -11,11 +11,7 @@
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style2.css">
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
+    
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -26,90 +22,81 @@
 
         <div class="wrapper">
             <!-- Sidebar  -->
-            <nav id="sidebar">
-                <div class="sidebar-header">
-                    <h3>Bootstrap Sidebar</h3>
+            <nav id="sidebar" class="bg-primary">
+                <div class="sidebar-header bg-primary">
+                    <h3>MyCarAdministrator</h3>
                 </div>
 
                 <ul class="list-unstyled components">
-                    <input type="search" class="campopesquisa" />
-                    <p>Dummy Heading</p>
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    
+                    <li>
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pessoas</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
                             <li>
-                                <a href="#">Home 1</a>
+                                <a href="#">Cadastrar Pessoa</a>
                             </li>
-                            <li>
-                                <a href="#">Home 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Home 3</a>
-                            </li>
+
                         </ul>
                     </li>
+
                     <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Veículos</a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
                             <li>
-                                <a href="#">Page 1</a>
+                                <a href="#">Cadastrar Marca de veículo</a>
                             </li>
                             <li>
-                                <a href="#">Page 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Page 3</a>
+                                <a href="#">Cadastrar modelo de veículo</a>
                             </li>
                         </ul>
                     </li>
+
                     <li>
-                        <a href="#">Portfolio</a>
+                        <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Relatórios</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu2">
+                            <li>
+                                <a href="#">Relação de clientes</a>
+                            </li>
+                            <li>
+                                <a href="#">Relação de serviços mensais</a>
+                            </li>
+                            <li>
+                                <a href="#">Relação de serviços anuais</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
+
                 </ul>
 
-                <ul class="list-unstyled CTAs">
-                    <li>
-                        <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                    </li>
-                    <li>
-                        <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-                    </li>
-                </ul>
+                <footer>
+                    <p>&copy; @DateTime.Now.Year - MyCarAdministrator</p>
+                </footer>
             </nav>
 
             <!-- Page Content  -->
             <div id="content">
 
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg bg-primary navbar-fixed-top ">
                     <div class="container-fluid">
+                        
+                            <input type="text"
+                                   placeholder="Buscar um Cliente"
+                                   name="busca"
+                                   class="form-control form-inline " />
 
-                        <button type="button" id="sidebarCollapse" class="btn btn-info">
-                            <i class="fas fa-align-left"></i>
-                            <span>Toggle Sidebar</span>
-                        </button>
-                        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <input type="submit"
+                                   class="btn btn-default btn-lg"
+                                   value="Buscar" />
+                        
+
+                        <button class="btn btn-default d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-align-justify"></i>
                         </button>
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="nav navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Page</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Page</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Page</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Page</a>
+                                <li class="nav-item  ">
+                                    <a class="btn btn-default " href="#">Sair</a>
                                 </li>
                             </ul>
                         </div>
@@ -119,9 +106,7 @@
                     @RenderBody()
 
                     <hr />
-                    <footer>
-                        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-                    </footer>
+                   
                 </div>
                 
             </div>

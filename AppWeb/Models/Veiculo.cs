@@ -42,8 +42,8 @@ namespace MyCarAdministrator.Models
         public string Cor { get; set; }
 
         public bool Ativo { get; set; }
-        
-        public DateTime Dataatualizacao { get; set; }
+
+        public DateTime Dataatualizacao { get; set; } = DateTime.Now;
 
     }
 }

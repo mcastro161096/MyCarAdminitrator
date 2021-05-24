@@ -126,12 +126,17 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AppContext.cs" />
+    <Compile Include="Models\EstadoCivil.cs" />
+    <Compile Include="Models\Papel.cs" />
     <Compile Include="Models\Pessoa.cs" />
     <Compile Include="Models\PessoaContato.cs" />
     <Compile Include="Models\PessoaDocumento.cs" />
     <Compile Include="Models\PessoaEndereco.cs" />
     <Compile Include="Models\PessoaPapel.cs" />
     <Compile Include="Models\ServicoPrestado.cs" />
+    <Compile Include="Models\Sexo.cs" />
+    <Compile Include="Models\TipoDeContato.cs" />
+    <Compile Include="Models\TipoDePessoa.cs" />
     <Compile Include="Models\TipoDeServico.cs" />
     <Compile Include="Models\Veiculo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

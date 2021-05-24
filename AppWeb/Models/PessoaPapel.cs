@@ -17,12 +17,8 @@ namespace MyCarAdministrator.Models
         public int PessoaId { get; set; }
         public virtual Pessoa Pessoa { get; set; }
 
-
-        public string Empresa { get; set; }
-
-        public string Filial { get; set; }
-
-        public string Papel { get; set; }
+        [Display(Name ="Selecione a função da pessoa")]
+        public Papel Papel { get; set; }
 
         public string Login { get; set; }
 
